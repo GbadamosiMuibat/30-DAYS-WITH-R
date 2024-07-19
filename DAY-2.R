@@ -1,4 +1,9 @@
-#Create a numeric objecct
+# In R, Everything is R is object.Object is the fundamental building block of r.They store data and can be manipulated usingt various functions.
+
+
+
+#Create a numeric object
+
 num <- 42 
 print(num) #display the numeric object
 
@@ -14,14 +19,25 @@ mode(num) #display the object is fundamentally stored as "numeric"
 
 #create a data frame
 
-data_frame <- data.frame(
+data_frame_example <- data.frame(
   name = c("John","Doe","Jane"),
   age = c(25 , 30, 28),
   score = c(100 , 150, 234)
 
 )
-print(data_frame)
+print(data_frame_example)
 
 class(data_frame) #display the object is a "data.frame"
 
 mode(data_frame)  #display the object is fundamentally stored as "list"
+
+# Factors are used to represent categorical data and can be ordered or unordered
+
+#create a factor
+
+factor_example <- factor(c("High" , "medium" ,"low" ,"very low"))
+print(factor_example)
+
+class(factor_example)
+
+mode(factor_example)
