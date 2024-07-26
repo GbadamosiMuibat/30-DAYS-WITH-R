@@ -143,3 +143,76 @@ print(third_element)  # Display the third element
 
 #Negative Indexing
 #You can exclude elements from a vector using negative indices.
+#Negative indexing lets you exclude specific elements by their positions. numeric_vector[-3] returns all elements except the third one.
+
+# Exclude the third element from numeric_vector
+excluded_third <- numeric_vector[-3]
+print(excluded_third)  # Display the vector without the third element
+
+#Logical Indexing
+#You can access elements of a vector using a logical vector.
+#Logical indexing uses a logical vector to include or exclude elements. Here, TRUE includes the element, and FALSE excludes it.
+
+# Create a logical vector
+logical_index <- c(TRUE, FALSE, TRUE, FALSE, TRUE)
+# Access elements of numeric_vector using logical_index
+logical_subset <- numeric_vector[logical_index]
+print(logical_subset)  # Display the subset based on logical index
+
+#Named Indexing
+#If a vector has names, you can access elements using those names.
+#Named indexing allows you to access elements by their names, which is useful for readability and managing complex data.
+
+# Create a named vector
+named_vector <- c(a=1, b=2, c=3)
+# Access the element named 'b'
+element_b <- named_vector["b"]
+print(element_b)  # Display the element named 'b'
+
+#Indexing Data Frames
+#Using Row and Column Indices
+#You can access elements of a data frame using the row and column indices.
+#Using data_frame_example[2, 3], you can access a specific element in a data frame by specifying its row and column indices.
+
+# Create a data frame
+data_frame_example <- data.frame(name=c("John", "Doe", "Jane"), age=c(25, 30, 28), score=c(90, 80, 85))
+# Access the element in the second row, third column
+element_2_3 <- data_frame_example[2, 3]
+print(element_2_3)  # Display the element in the second row, third column
+  
+#Using Column Names
+#You can access entire columns of a data frame using their names.
+#By using data_frame_example$name, you can directly access a column by its name.
+
+# Access the 'name' column
+name_column <- data_frame_example$name
+print(name_column)  # Display the 'name' column
+
+#Subsetting Rows and Columns
+#You can subset a data frame to include only specific rows or columns.
+#data_frame_example[, c("name", "score")] selects all rows and only the specified columns.
+
+#Subset data_frame_example to include only the name and score columns
+subset_example <- data_frame_example[, c("name", "score")]
+print(subset_example)  # Display the subset of the data frame
+
+#Conditional Indexing
+#You can subset a data frame based on a condition.
+#Using subset(data_frame_example, age > 25), you can select rows that meet a specified condition.
+
+
+# Subset data_frame_example to include only rows where the age is greater than 25
+conditional_subset <- subset(data_frame_example, age > 25)
+
+print(conditional_subset)  # Display the subset based on the condition
+
+#Indexing Lists
+#Accessing List Elements
+#You can access elements of a list using double square brackets [[]].
+
+# Create a list
+list_example <- list(name="John", age=25, scores=c(90, 85, 88))
+# Access the 'age' element of list_example
+age_element <- list_example[["age"]]
+print(age_element)  # Display the 'age' element
+
