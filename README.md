@@ -12,3 +12,12 @@
 ##### -Data Frames
 ##### -Factors and Categorical data
 ##### -Indexina and Subsetting
+
+## DAY-3
+##### -Introduction to Functions in R
+##### -Understanding File Types
+##### CSV files
+##### TXT files
+##### Excel files
+##### -Delimiters and Their Importance
+##### -Understanding Reading and Writing Data

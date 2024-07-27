@@ -196,7 +196,7 @@ print(name_column)  # Display the 'name' column
 subset_example <- data_frame_example[, c("name", "score")]
 print(subset_example)  # Display the subset of the data frame
 
-#Conditional Indexing
+#Conditional z
 #You can subset a data frame based on a condition.
 #Using subset(data_frame_example, age > 25), you can select rows that meet a specified condition.
 
