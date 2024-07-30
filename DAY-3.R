@@ -82,3 +82,27 @@ write.csv(sample_data, "sample_data.csv", row.names = FALSE)
 data <- read.csv("sample_data.csv")
 # Displaying the data frame
 print(data)
+
+#Writing CSV Files
+#To write a CSV file in R, you use the write.csv() function, which is also a built-in function that comes with the base R package.
+
+# Writing the data frame to a CSV file
+write.csv(data, "exported_data.csv", row.names = FALSE)
+
+#Create a Sample TXT File
+# Writing the data frame to a TXT file (tab-delimited)
+write.table(sample_data, "sample_data.txt", sep = "\t", row.names = FALSE)
+
+#Reading the TXT File
+# Reading the TXT file into a data frame
+data_txt <- read.table("sample_data.txt", header = TRUE, sep = "\t")
+# Displaying the data frame
+print(data_txt)
+
+#Writing TXT Files
+write.table(x, file, sep = " ", row.names = TRUE, col.names = TRUE, ...)
+# Writing the data frame to a TXT file (tab-delimited)
+write.table(data_txt, "exported_data.txt", sep = "\t", row.names = FALSE, col.names = TRUE)
+
+#Reading Excel Files
+#To read an Excel file in R, you use the read_excel() function from the readxl package.
