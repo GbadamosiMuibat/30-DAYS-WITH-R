@@ -25,3 +25,9 @@
 ## DAY-4
 ##### -Data manipulation with dplyr.
 ##### -Grammar of data manipulation and proficient in filtering, selecting, mutating, summarizing, and arranging data.
+
+## DAY-5
+##### -Handling Missing Data.
+##### -Converting Data Types.
+##### -Renaming Columns.
+##### -Introduction to the tidyr Package.
