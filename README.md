@@ -21,3 +21,7 @@
 ##### Excel files
 ##### -Delimiters and Their Importance
 ##### -Understanding Reading and Writing Data
+
+## DAY-4
+##### -Data manipulation with dplyr.
+##### -Grammar of data manipulation and proficient in filtering, selecting, mutating, summarizing, and arranging data.
